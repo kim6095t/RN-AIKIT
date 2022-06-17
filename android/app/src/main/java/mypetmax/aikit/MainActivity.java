@@ -1,4 +1,4 @@
-package com.classic;
+package mypetmax.aikit;
 
 import com.facebook.react.ReactActivity;
 

@@ -15,7 +15,7 @@ function Splash({navigation}) {
                 source={require('../../assets/image/aicar.png')}
             />
             <Text style={styles.text}>
-                Ai 자동차
+                AI 키트
             </Text>
         </View>
     )
