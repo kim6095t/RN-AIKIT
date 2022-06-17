@@ -8,6 +8,7 @@ import {
   Alert,
   TouchableOpacity,
   Button,
+  StyleSheet
 } from 'react-native';
 import RNBluetoothClassic, {
   BluetoothDevice,
@@ -91,9 +92,12 @@ const Ble: React.FC = (props:any) => {
 
   return (
     <View>
-      <Text>React Native Bluetooth Classic</Text>
-
-      <Button title="Get Bonded Devices" onPress={handleGetBondedDevices} />
+      <TouchableOpacity
+        style={styles.button}
+        onPress={handleGetBondedDevices}
+      >
+        <Text style={styles.text}>블루투스기기 불러오기</Text>
+      </TouchableOpacity>
 
       <FlatList
         data={devices}
@@ -116,10 +120,8 @@ const Ble: React.FC = (props:any) => {
             >
               <Text
                 style={{
-                  color:
-                    deviceConnected && item.id === deviceConnected.id
-                      ? 'white'
-                      : 'black',
+                  fontFamily:"NanumPenScript-Regular",
+                  fontSize: 30,
                 }}
               >
                 {item.name}
@@ -131,5 +133,24 @@ const Ble: React.FC = (props:any) => {
     </View>
   );
 };
+
+
+const styles=StyleSheet.create({
+  body:{
+      backgroundColor: '#906E55'
+  },
+  text:{
+      fontSize: 50,
+      color: '#000000',
+      fontFamily:"NanumPenScript-Regular"
+  },
+  button: {
+    alignItems: "center",
+    backgroundColor: "#D9BDAD",
+    padding: 20,
+    margin:10,
+    borderRadius:30,
+  },
+})
 
 export default Ble;

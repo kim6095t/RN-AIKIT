@@ -30,11 +30,11 @@ const Web = (props:any) => {
 
     //web에서 ""를 포함하여 data를 날린다.
     if(data==`"A"`){
-      handleRequest("0")
+      handleRequest("A")
     }else if(data===`"B"`){
-      handleRequest("2")
+      handleRequest("B")
     }else if(data===`"C"`){
-      handleRequest("3")
+      handleRequest("C")
     }
   }
 

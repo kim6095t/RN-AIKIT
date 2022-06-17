@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Pen+Script&display=swap');
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.btn-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position : relative;
+}
+.btn{
+  background-color: #D9BDAD;
+  font-size: 150%;
+  font-family: 'Nanum Pen Script', cursive;
+  border-radius: 30px;
+  border-width: 0;
+  margin: 1%;
+  padding: 7%;
+}
+#console{
+  font-size: 150%;
+  font-family: 'Nanum Pen Script', cursive;
+}
